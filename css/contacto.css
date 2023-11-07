@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: roboto;
+    background-color: rgb(31, 31, 31);
+}
+
+:root{
+    --primary-color: rgb(78, 78, 78);
+    --secondary-color:rgb(41, 41, 41) ;
+    --card-color: rgb(19, 19, 19);
+}
+
+.main-container{
+    background-color: var(--secondary-color);
+    height: 500px;
+    margin: 100px 300px;
+    border-radius: 10px;
+}
+
+.main-section{
+    justify-content: space-between;
+    height: 500px;
+}
+
+.div-contacto{
+    width: 50%; 
+}
+
+.titulo-contacto{
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    font-weight: 300;
+    color: white;
+    font-size: 40px;
+}
+
+.div-input{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 90px;
+}
+
+input, textarea{
+    height: 35px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    resize: none;
+    padding-left: 5px;
+}
+
+textarea{
+    height: 80px;
+}
+
+label{
+    color: rgb(117, 117, 117);
+}
+
+.div-input:last-child{
+    padding-top: 25px;
+}
+
+.boton{
+    width: 100%;
+    height: 35px;
+    font-size: 14px;
+    font-weight: 400;
+    border-radius: 6px;
+    transition: transform 0.1s;
+    border: none;
+    cursor: pointer;
+}
+
+.boton:hover{
+    transform: translateY(1px);
+}
+
+.div-mapa{
+    width: 50%;
+    height: 100%;
+}
+
+.mapa{
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+@media screen and (width < 768px){
+    
+    .main-container{
+        margin: 0px;
+        height: auto;
+    }
+
+    .main-section{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .div-contacto{
+        height: 50%;
+        width: 100%;
+    }
+
+    .div-input{
+        padding: 10px;
+    }
+
+    .div-mapa{
+        padding: 30px 10px 50px;
+        height: 50%;
+        width: 100%;
+    }
+
+    .mapa{
+        height: 500px;
+        border-radius: 0px;
+    }
+}

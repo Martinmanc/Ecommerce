@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/register.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="https://kit.fontawesome.com/6b40b92f20.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="main-header">
+        <input class="input-check" type="checkbox" id="check-menu">
+        <label class="burger-menu" for="check-menu">
+            <span class="burger-line"></span>
+        </label>
+
+        <div class="logo-joi">
+            <i class="fa-solid fa-gamepad fa-2xl"></i>
+        </div>
+
+        <nav class="main-nav">
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a class="nav-link" href="/index.html">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/pages/contacto.html">CONTACTO</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/pages/registro.html">REGISTRO</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/pages/acerca-de.html">ACERCA DE</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="logo-user-cart">
+            <a class="logo-user" href="">
+                <i class="fa-solid fa-circle-user fa-2xl" style="color: #000000;"></i>
+                <div class="nombre-user">Martin Mancini</div>
+            </a>
+            <a class="logo-cart" href="">
+                <i class="fa-solid fa-cart-shopping fa-2xl" style="color: #000000;"></i>
+            </a>
+        </div>
+    </header>
+
+    <main class="main-register">
+        <form action="registro.php" method="post">
+            <div class="input-group">
+                <label for="nombre">Nombre completo</label>
+                <input type="text" id="nombre" name="nombre"  required minlength="3" maxlength="40">
+            </div>
+
+            <div class="input-group">
+                <label for="email">Correo electrónico</label>
+                <input type="email" id="email" name="email" placeholder="@gmail.com" required minlength="12">
+            </div>
+
+            <div class="input-group">
+                <label for="contrasena">Contraseña</label>
+                <input type="password" id="contrasena" name="contrasena" placeholder="Mínimo 6 caracteres" required minlength="6" pattern="^(?=.*[A-Z])(?=.*\d).+$" title="La contraseña debe contener al menos una letra mayúscula y al menos un número">
+            </div>
+
+            <div class="input-group">
+                <label for="confirmar_contrasena">Confirmar contraseña</label>
+                <input type="password" id="confirmar_contrasena" name="confirmar_contrasena"
+                    placeholder="Repite tu contraseña" required minlength="6">
+            </div>
+
+            <div class="input-group">
+                <label for="fecha_nacimiento">Fecha de nacimiento</label>
+                <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+            </div>
+
+            <div class="input-group">
+                <label for="provincia">Provincia</label>
+                <select id="provincia" name="provincia" required>
+                    <option value="Buenos Aires">Buenos Aires</option>
+                    <option value="Catamarca">Catamarca</option>
+                    <option value="Chaco">Chaco</option>
+                    <option value="Chubut">Chubut</option>
+                    <option value="Córdoba">Córdoba</option>
+                    <option value="Corrientes">Corrientes</option>
+                    <option value="Entre Ríos">Entre Ríos</option>
+                    <option value="Formosa">Formosa</option>
+                    <option value="Jujuy">Jujuy</option>
+                    <option value="La Pampa">La Pampa</option>
+                    <option value="La Rioja">La Rioja</option>
+                    <option value="Mendoza">Mendoza</option>
+                    <option value="Misiones">Misiones</option>
+                    <option value="Neuquén">Neuquén</option>
+                    <option value="Río Negro">Río Negro</option>
+                    <option value="Salta">Salta</option>
+                    <option value="San Juan">San Juan</option>
+                    <option value="San Luis">San Luis</option>
+                    <option value="Santa Cruz">Santa Cruz</option>
+                    <option value="Santa Fe">Santa Fe</option>
+                    <option value="Santiago del Estero">Santiago del Estero</option>
+                    <option value="Tierra del Fuego">Tierra del Fuego</option>
+                    <option value="Tucumán">Tucumán</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <label for="observaciones">Observaciones</label>
+                <textarea id="observaciones" name="observaciones" placeholder="Escribe tus observaciones aquí" maxlength="200">
+                </textarea>
+            </div>
+            <div class="parte-boton">
+                <button type="submit" class="boton-registro">REGISTRARSE</button>
+                <a class="parte-login" href="/pages/login.html">¿Ya tenes cuenta?</a>
+            </div>
+            </div>
+        </form>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-seccion seccion1">
+            <ul>
+                <li class="li-seccion1">
+                    <a href="www.instagram.com/GameXpress"><i class="fa-brands fa-instagram fa-2xl"></i>instagram</a>
+                </li>
+                <li class="li-seccion1">
+                    <a href="www.facebook.com/GameXpress"><i class="fa-brands fa-facebook fa-2xl"></i>facebook</a>
+                </li>
+                <li class="li-seccion1">
+                    <a href="https://wa.me/5493364543654"><i class="fa-brands fa-whatsapp fa-2xl"></i>+54 9
+                        336-4543654</a>
+                </li>
+                <li class="li-seccion1">
+                    <a href="mailto:GameXpress@gmail.com"><i
+                            class="fa-regular fa-envelope fa-2xl"></i>GameXpress@gmail.com</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-seccion seccion2">
+            <div id="logo-footer">
+                <i class="fa-solid fa-gamepad fa-2xl"></i>
+                GameXpress
+            </div>
+            Tu puerta de entrada al mundo del entretenimiento digital. Apasionados por la tecnología, tenemos lo último
+            y más emocionante en consolas gamers.
+        </div>
+        <div class="footer-seccion seccion3">
+            <ul>
+                <li class="li-seccion3"><a class="link-seccion3" href="/pages/contacto.html">CONTACTO</a></li>
+                <li class="li-seccion3"><a class="link-seccion3" href="/pages/registro.html">REGISTRO</a></li>
+                <li class="li-seccion3"><a class="link-seccion3" href="/pages/acerca-de.html">ACERCA DE</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>
