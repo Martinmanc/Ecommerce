@@ -41,6 +41,7 @@ body{
 label{
     color: rgb(117, 117, 117);
     padding-left: 4px;
+    padding-bottom: 4px;
 }
 
 input{

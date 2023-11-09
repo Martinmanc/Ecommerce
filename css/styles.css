@@ -223,6 +223,12 @@ body{
     border: 1px solid white;
 }
 
+@media screen and (width < 1300px){
+    .main-content{
+    margin: 20px 150px 20px 150px;
+    }
+}
+
 .titulo-productos{
     text-align: center;
     color: white;
