@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #222;
+    min-height: 100dvh;
+    font-family: "Roboto";
+    color: white;
+}
+
+:root {
+    --primary-color: rgb(78, 78, 78);
+    --secondary-color: rgb(41, 41, 41);
+    --card-color: rgb(19, 19, 19);
+}
+
+.admin-container {
+    display: flex;
+    margin-top: 100px;
+}
+
+.form-container {
+    position: fixed;
+    padding: 40px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-container input {
+    color: rgb(117, 117, 117);
+    padding-left: 5px;
+}
+
+label {
+    color: rgb(117, 117, 117);
+    padding: 5px;
+}
+
+input {
+    height: 40px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    outline: none;
+    border: none;
+    font-family: roboto;
+    width: 300px;
+    padding-left: 5px;
+}
+
+select {
+    height: 40px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    outline: none;
+    border: none;
+    width: 300px;
+}
+
+.mb {
+    display: flex;
+}
+
+.mb input{
+    height: 16px;
+    margin-left: -135px;
+    margin-top: 27px;
+}
+
+.mb label{
+    font-size: 20px;
+    padding-left: 25px;
+    padding-top: 22px;
+    margin-left: 60px;
+}
+
+.btn-form {
+    height: 30px;
+    width: 130px;
+    font-size: 14px;
+    font-weight: 400;
+    border-radius: 6px;
+    transition: transform 0.1s;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.table-container {
+    flex-grow: 1;
+    margin-left: 420px;
+}
+
+.user-table {
+    display: table;
+    border: 1px white solid;
+    border-collapse: collapse;
+    background-color: var(--secondary-color);
+    font-family: sans-serif;
+    width: 90%;
+    margin: 20px;
+}
+
+.table-head th {
+    padding: 10px;
+}
+
+.table-row {
+    display: table-row;
+}
+
+.user-image img {
+    max-width: 50px;
+    min-width: 50px;
+    min-height: 50px;
+    max-height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+td,
+th {
+    padding: 10px;
+    border: 1px white solid;
+    text-align: left;
+}

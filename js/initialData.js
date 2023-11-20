@@ -31,7 +31,8 @@ const usersStart = [{
     password: 'password789',
     bornDate: new Date('1988-08-08').getTime(),
     location: 'Mendoza',
-    image: 'https://oyster.ignimgs.com/mediawiki/apis.ign.com/mario-kart-for-wii-u/1/1d/Mk8icontoadette.png?width=325'
+    image: 'https://oyster.ignimgs.com/mediawiki/apis.ign.com/mario-kart-for-wii-u/1/1d/Mk8icontoadette.png?width=325',
+    role: 'CLIENT_ROLE',
 },
 {
     fullname: 'Michael Smith',
@@ -42,7 +43,8 @@ const usersStart = [{
     password: 'password101',
     bornDate: new Date('1983-04-10').getTime(),
     location: 'San Luis',
-    image: 'https://oyster.ignimgs.com/mediawiki/apis.ign.com/mario-kart-for-wii-u/d/d1/Mk8iconrosalina.png?width=1280'
+    image: 'https://oyster.ignimgs.com/mediawiki/apis.ign.com/mario-kart-for-wii-u/d/d1/Mk8iconrosalina.png?width=1280',
+    role: 'CLIENT_ROLE',
 },
 {
     fullname: 'Emily Johnson',
@@ -53,7 +55,8 @@ const usersStart = [{
     password: 'password202',
     bornDate: new Date('1995-02-15').getTime(),
     location: 'Córdoba',
-    image: 'https://oyster.ignimgs.com/mediawiki/apis.ign.com/mario-kart-for-wii-u/5/59/Mk8iconpeach.png?width=325'
+    image: 'https://oyster.ignimgs.com/mediawiki/apis.ign.com/mario-kart-for-wii-u/5/59/Mk8iconpeach.png?width=325',
+    role: 'CLIENT_ROLE',
 },
 {
     fullname: 'Daniel Lee',
@@ -64,7 +67,8 @@ const usersStart = [{
     password: 'password303',
     bornDate: new Date('1989-07-07').getTime(),
     location: 'Buenos Aires',
-    image: 'https://oyster.ignimgs.com/mediawiki/apis.ign.com/mario-kart-for-wii-u/b/bf/Mk8iconmario.png?width=325'
+    image: 'https://oyster.ignimgs.com/mediawiki/apis.ign.com/mario-kart-for-wii-u/b/bf/Mk8iconmario.png?width=325',
+    role: 'CLIENT_ROLE',
 },
 ];
 
