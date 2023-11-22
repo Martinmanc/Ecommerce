@@ -21,6 +21,7 @@ body{
     background-color: white;
     display: flex;
     justify-content: space-between;
+    max-height: 50px;
 }
 
 .main-nav{
@@ -34,15 +35,15 @@ body{
     margin-right: 8px;
 }
 
-.nav-item{
-    padding-top: 16px;
-}
-
 .nav-list{
     display: flex;
     list-style-type: none;
     gap: 2rem;
-    margin-left: 110px;
+    margin-left: 120px;
+}
+
+.nav-item{
+    padding-top: 16px;
 }
 
 .nav-link {
@@ -69,6 +70,22 @@ body{
     padding: 1rem;
 }
 
+.logo-cart{
+    padding-left: 0.5rem;
+}
+
+.logout-button{
+    border: none;
+    background-color: white;
+    padding-top: 16px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.logout-button:hover{
+    color: rgb(119, 119, 119);
+}
+
 .logo-user{
     display: flex;
     text-align: center;
@@ -82,11 +99,21 @@ body{
     padding-left: 5px;
 }
 
+.user-image{
+    max-width: 40px;
+    min-width: 40px;
+    min-height: 40px;
+    max-height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+
 .logo-user-cart{
     display: flex;
 }
 
-@media screen and (width < 768px){
+@media screen and (width < 1000px){
 
     .main-header{
         height: 60px;
@@ -111,7 +138,8 @@ body{
         left: 0;
         top: 60px;
         bottom: 0;
-        width: 200px;
+        top: 50px;
+        width: 220px;
         padding: 5px 3px;
         background-color: rgb(255, 255, 255);
     }
@@ -121,11 +149,16 @@ body{
         width: 177px;
     }
 
+    .nav-item{
+        width: 100px;
+    }
+
     .nav-list{
         display: flex;
         flex-direction: column;
         left: 0;
         margin-left: 15px;
+        width: auto;
     }
     
     .input-check:checked ~ .main-nav{
@@ -166,6 +199,15 @@ body{
     .input-check:checked ~ .burger-menu ~ body {
         overflow: hidden;
     }
+
+    .logout-button{
+        padding-top: 10px;
+    }
+
+    .logo-cart{
+        padding: 12px 12px 12px 0px;
+    }
+
 }
 
 
