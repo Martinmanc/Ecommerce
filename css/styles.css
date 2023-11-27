@@ -331,6 +331,7 @@ body{
     font-weight: 100;
     margin-bottom: 10px;
     padding: 5px 10px 0px 10px;
+    min-height: 100px;
 }
 
 .div-fecha{

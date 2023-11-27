@@ -51,6 +51,3 @@ if (loguedUser) {
         window.location.href = '/index.html'
     }
     userActionHTML.append(logoutButton)
-
-
-

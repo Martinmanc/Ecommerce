@@ -73,7 +73,44 @@ const usersStart = [{
 ];
 
 if (localStorage.getItem("users") === null) {
-
     localStorage.setItem("users", JSON.stringify(usersStart))
-
 }
+
+const productStart = [
+    {
+        name: 'play 5',
+        image: "/assets/productos/ps/ps5.webp",
+        description: "La PS5 de Sony: Juegos de última generación con gráficos espectaculares de hasta 4K, controlador innovador y tiempos de carga ultrarrápidos gracias a su SSD. Una experiencia de juego inmersiva y entretenimiento de vanguardia en una sola consola.",
+        price: 870000,
+        date: (new Date('2020-04-11')).getTime(),
+        id: 1,
+    },
+    {
+        name: 'play 4',
+        image: "/assets/productos/ps/ps4.jpg",
+        description: "La PlayStation 4 es una consola de videojuegos de la empresa Sony. Fue lanzada en 2013 y es la cuarta generación de la serie de consolas PlayStation. La PS4 se destaca por su potencia de procesamiento",
+        price: 530000,
+        date: (new Date('2020-04-11')).getTime(),
+        id: 2,
+    },
+    {
+        name: 'play 3',
+        image: "/assets/productos/ps/ps3.jpg",
+        description: "La PlayStation 3 es una consola de videojuegos lanzada por Sony en 2006. Fue la tercera integraciónde la serie PlayStation.La PS3 se destacó por su capacidad para reproducir discos ,lo que la convirtió en una plataforma multimedia versátil además de una consola de juegos. Introdujo el controlador inalámbrico DualShock 3 con detección de movimiento y vibración",
+        price: 270000,
+        date: (new Date('2020-04-11')).getTime(),
+        id: 3,
+    },
+    {
+        name: 'play 2',
+        image: "/assets/productos/ps/ps2.jpg",
+        description: "La PlayStation 2 es una consola de videojuegos desarrollada por Sony y lanzada en 2000. Es la sucesora de la PlayStation original y fue una de las consolas más exitosas de todos los tiempos. La PS2 presentó avances tecnológicos en términos de gráficos y jugabilidad en comparación con su predecesora.",
+        price: 150000,
+        date: (new Date('2020-04-11')).getTime(),
+        id: 4,
+    },
+];
+
+if (localStorage.getItem("products") === null) {
+    localStorage.setItem("products", JSON.stringify(productStart))
+} 

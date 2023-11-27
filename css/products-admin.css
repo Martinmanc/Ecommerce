@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
 
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -55,6 +55,17 @@ input {
     padding-left: 5px;
 }
 
+textarea{
+    border: none;  
+    resize: none;
+    outline: none;
+}
+
+textarea:focus{
+    border: none;
+    outline: none;
+}
+
 select {
     height: 40px;
     border-radius: 8px;
@@ -64,26 +75,9 @@ select {
     width: 300px;
 }
 
-.mb {
-    display: flex;
-}
-
-.mb input{
-    height: 16px;
-    margin-left: -135px;
-    margin-top: 27px;
-}
-
-.mb label{
-    font-size: 20px;
-    padding-left: 25px;
-    padding-top: 22px;
-    margin-left: 60px;
-}
-
 .btn-form {
     height: 30px;
-    width: 130px;
+    width: 300px;
     font-size: 14px;
     font-weight: 400;
     border-radius: 6px;
@@ -116,7 +110,7 @@ select {
     display: table-row;
 }
 
-.user-image img {
+.product-image img {
     max-width: 50px;
     min-width: 50px;
     min-height: 50px;
@@ -130,6 +124,13 @@ th {
     padding: 10px;
     border: 1px white solid;
     text-align: left;
+}
+
+td {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 300px;
 }
 
 @media screen and (max-width: 800px) {
@@ -147,5 +148,9 @@ th {
     .table-container {
         width: 100%;
         margin-left: 0; 
+    }
+
+    textarea{
+        width: 300px;
     }
 }
