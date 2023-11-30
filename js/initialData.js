@@ -84,6 +84,7 @@ const productStart = [
         price: 870000,
         date: (new Date('2020-04-11')).getTime(),
         id: 1,
+        section : "section-1",
     },
     {
         name: 'play 4',
@@ -92,6 +93,7 @@ const productStart = [
         price: 530000,
         date: (new Date('2020-04-11')).getTime(),
         id: 2,
+        section : "section-1",
     },
     {
         name: 'play 3',
@@ -100,6 +102,7 @@ const productStart = [
         price: 270000,
         date: (new Date('2020-04-11')).getTime(),
         id: 3,
+        section : "section-1",
     },
     {
         name: 'play 2',
@@ -108,7 +111,45 @@ const productStart = [
         price: 150000,
         date: (new Date('2020-04-11')).getTime(),
         id: 4,
+        section : "section-1",
     },
+    {
+        name: 'Xbox X',
+        image: "/assets/productos/xbox/xbox x.jpg",
+        description: "Lanzada en noviembre de 2020, la Xbox Series X es la consola de última generación de Microsoft.Ofrece un rendimiento y gráficos significativamente mejorados en comparación con sus predecesoras,con capacidades para juegos en 4K y tasas de fotogramas más altas.",
+        price: 760000,
+        date: (new Date('2020-04-11')).getTime(),
+        id: 5,
+        section : "section-2",
+    },
+    {
+        name: 'Xbox One',
+        image: "/assets/productos/xbox/xbox one.webp",
+        description: "Lanzada en 2013, la Xbox One representó un enfoque integral en el entretenimiento multimedia,ofreciendo integración con servicios de transmisión y televisión en vivo. También incluía mejoras enel hardware y gráficos, así como el sistema de control de movimiento Kinect.",
+        price: 500000,
+        date: (new Date('2020-04-11')).getTime(),
+        id: 6,
+        section : "section-2",
+    },
+    {
+        name: 'Xbox 360',
+        image: "/assets/productos/xbox/xbox one.webp",
+        description: "Lanzada en 2005, la Xbox 360 marcó una nueva generación de consolas. Fue pionera en la distribucióndigital de juegos y medios, y ofreció una amplia gama de títulos exclusivos y multijugador en líneaa través de Xbox Live.",
+        price: 250000,
+        date: (new Date('2020-04-11')).getTime(),
+        id: 7,
+        section : "section-2",
+    },
+    {
+        name: 'Xbox',
+        image: "/assets/productos/xbox/primera xbox.jpg",
+        description: "Lanzada en 2001, la Xbox fue la primera consola de videojuegos de Microsoft. Introdujo innovacionescomo un disco duro interno, gráficos mejorados en comparación con las consolas contemporáneas y unenfoque en juegos en línea a través de Xbox Live.",
+        price: 120000,
+        date: (new Date('2020-04-11')).getTime(),
+        id: 8,
+        section : "section-2",
+    }
+
 ];
 
 if (localStorage.getItem("products") === null) {

@@ -18,6 +18,7 @@ productForm.addEventListener("submit", (evt) => {
         price: el.price.valueAsNumber,
         description: el.description.value,
         id: id,
+        section : el.section.value,
     }
 
     if (el.id.value) {
@@ -141,6 +142,7 @@ function editarProducto(idBuscar) {
     el.price.value = productEdit.price;
     el.description.value = productEdit.description;
     el.date.value = new Date(productEdit.date).toISOString().split('T')[0];
+    el.section.value = productEdit.section;
 
     submitBtn.classList.add('btn-edit');
     submitBtn.innerText = 'Editar producto'
